@@ -86,6 +86,7 @@ public class GameController : MonoBehaviour
             spawnPlane.transform.position.y + 0.5f,
             spawnPlane.transform.position.z + Random.Range(-0.5f, 0.5f));
                 item.gameObject.SetActive(true);
+                item.GetComponent<BallBehaviour>().isInPlace = true;
                 item.transform.position = vect;
             }
             
